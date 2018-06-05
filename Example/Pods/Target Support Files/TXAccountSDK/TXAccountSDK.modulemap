@@ -1,0 +1,6 @@
+framework module TXAccountSDK {
+  umbrella header "TXAccountSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

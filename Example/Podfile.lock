@@ -1,0 +1,35 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - JVFloatLabeledTextField (1.0.2)
+  - TXAccountSDK (0.1.0):
+    - JVFloatLabeledTextField (= 1.0.2)
+    - XLForm (~> 3.0)
+  - XLForm (3.3.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - TXAccountSDK (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - FBSnapshotTestCase
+    - JVFloatLabeledTextField
+    - XLForm
+
+EXTERNAL SOURCES:
+  TXAccountSDK:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  JVFloatLabeledTextField: 58a3a32cfb800e5b224f676987e7c13abf50a14d
+  TXAccountSDK: 2bc338d8d3d2a542b03ec043cee7c918c9ec6c38
+  XLForm: d5c391dfc62865927b5bcab0a5a0dbfb3e02b0ec
+
+PODFILE CHECKSUM: 4642040f70b22615d3095c355ffdcbbb55dc4919
+
+COCOAPODS: 1.5.0

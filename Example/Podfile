@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'TXAccountSDK_Example' do
+  pod 'TXAccountSDK', :path => '../'
+
+  target 'TXAccountSDK_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end

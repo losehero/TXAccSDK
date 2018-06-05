@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cYH-fF-N8e">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar View Controller-->
+        <scene sceneID="2e6-iZ-byH">
+            <objects>
+                <tabBarController storyboardIdentifier="TXTabBarViewController" id="cYH-fF-N8e" customClass="TXTabBarViewController" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kQM-in-XJQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lrN-pL-Saa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2246" y="-493"/>
+        </scene>
+        <!--Net Work Fail View Controller-->
+        <scene sceneID="8t3-3B-i9C">
+            <objects>
+                <viewController storyboardIdentifier="TXNetWorkFailViewController" id="njP-98-NrR" customClass="TXNetWorkFailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uu5-O5-Ak6"/>
+                        <viewControllerLayoutGuide type="bottom" id="rgt-KD-X3S"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Kyd-m8-a1a">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ulZ-WV-7er">
+                                <rect key="frame" x="36" y="350" width="302" height="77"/>
+                                <color key="backgroundColor" red="0.96862745100000003" green="0.62352941179999999" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="YN2-sh-xNS"/>
+                                </constraints>
+                                <state key="normal" title="点击重试"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="网络原因，加载失败" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BFw-Lq-BMO">
+                                <rect key="frame" x="36" y="272" width="302" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="mvn-aJ-dEi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fail" translatesAutoresizingMaskIntoConstraints="NO" id="syt-8x-VAI">
+                                <rect key="frame" x="0.0" y="65" width="375" height="214"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="214" id="lpW-cB-k7u"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ulZ-WV-7er" firstAttribute="leading" secondItem="Kyd-m8-a1a" secondAttribute="leadingMargin" constant="20" id="11r-ZJ-03U"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BFw-Lq-BMO" secondAttribute="trailing" constant="21" id="2pu-aT-FPW"/>
+                            <constraint firstItem="syt-8x-VAI" firstAttribute="leading" secondItem="Kyd-m8-a1a" secondAttribute="leading" id="4p0-IW-7Of"/>
+                            <constraint firstItem="BFw-Lq-BMO" firstAttribute="top" secondItem="uu5-O5-Ak6" secondAttribute="bottom" constant="252" id="8qm-Wn-HZ9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ulZ-WV-7er" secondAttribute="trailing" constant="21" id="O7F-By-rku"/>
+                            <constraint firstAttribute="trailing" secondItem="syt-8x-VAI" secondAttribute="trailing" id="WdV-6T-lCq"/>
+                            <constraint firstItem="syt-8x-VAI" firstAttribute="top" secondItem="uu5-O5-Ak6" secondAttribute="bottom" constant="45" id="f7e-gU-bSQ"/>
+                            <constraint firstItem="ulZ-WV-7er" firstAttribute="top" secondItem="BFw-Lq-BMO" secondAttribute="bottom" constant="8" id="kco-QD-24a"/>
+                            <constraint firstItem="BFw-Lq-BMO" firstAttribute="leading" secondItem="Kyd-m8-a1a" secondAttribute="leadingMargin" constant="20" id="y2V-ye-td8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="requestButton" destination="ulZ-WV-7er" id="3Ca-Gb-im2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pjz-DD-2N7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2247.1999999999998" y="174.96251874062969"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="wQg-tq-qST">
+            <objects>
+                <viewController storyboardIdentifier="TXViewController" id="whP-gf-Uak" customClass="TXViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uEw-UM-LJ8"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mvr-aV-6Um"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x80-9N-qdu">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="delegate" destination="whP-gf-Uak" id="ghX-UN-RHn"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="x80-9N-qdu" firstAttribute="top" secondItem="TpU-gO-2f1" secondAttribute="top" id="DpP-cu-klQ"/>
+                            <constraint firstItem="x80-9N-qdu" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" id="GMf-WA-v6B"/>
+                            <constraint firstAttribute="trailing" secondItem="x80-9N-qdu" secondAttribute="trailing" id="JzY-FZ-uQD"/>
+                            <constraint firstItem="Mvr-aV-6Um" firstAttribute="top" secondItem="x80-9N-qdu" secondAttribute="bottom" id="nym-OX-kSh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="u18-lz-DU8"/>
+                    <connections>
+                        <outlet property="webview" destination="x80-9N-qdu" id="yPd-Df-1uf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1433" y="-493"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="xJj-6z-Txo">
+            <objects>
+                <viewController id="VSb-RC-wFy" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qAs-H2-YMQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="bMf-nM-Tiv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zMT-uk-VTO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5hC-qQ-YgL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fail" width="100" height="100"/>
+    </resources>
+</document>
